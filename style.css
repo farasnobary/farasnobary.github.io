@@ -1,0 +1,60 @@
+body {font-family: Arial, serif;
+    font-size: 12pt;
+    background-color: #e9ff79;
+    color: #64181e; 
+    margin: 12pt;
+}
+
+h1 {font-family: 'Modern Love Caps';
+    font-size: 35pt;
+    color: #2f76d3;
+}
+
+h2 {font-family: 'Engravers MT', monospace;
+    font-size: 24pt;
+    color: #fb0101;
+}
+
+h3 {font-family: 'Verdana', sans-serif;
+    font-size: 16pt;
+    color: #ee15d8;
+}
+
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 14pt;
+    color: #000000; 
+    line-height: 1.6; 
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #0279f7;
+}
+
+a:hover, a:active {
+    color: #4a4949;
+}
+
+.link-section {margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+
+table a {
+    font-weight: bold;
+    color: #0279f7;
+}
