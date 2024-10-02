@@ -1,18 +1,18 @@
-body {font-family: Arial, serif;
+body {font-family: Arial, monospace, serif;
     font-size: 12pt;
-    background-color: #e9ff79;
-    color: #64181e; 
+    background-color: #cee8f6;
+    color: #686767; 
     margin: 12pt;
 }
 
-h1 {font-family: 'Modern Love Caps';
+h1 {font-family: 'Microsoft Tai Le';
     font-size: 35pt;
-    color: #2f76d3;
+    color: #535659;
 }
 
-h2 {font-family: 'Engravers MT', monospace;
+h2 {font-family: 'Lucida Sans', monospace;
     font-size: 24pt;
-    color: #fb0101;
+    color: #427454;
 }
 
 h3 {font-family: 'Verdana', sans-serif;
@@ -23,7 +23,7 @@ h3 {font-family: 'Verdana', sans-serif;
 p {
     font-family: 'Times New Roman', serif;
     font-size: 14pt;
-    color: #000000; 
+    color: #686767; 
     line-height: 1.6; 
 }
 
