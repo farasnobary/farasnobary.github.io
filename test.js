@@ -5,7 +5,11 @@ function promptName() {
 
 function enlargeImage() {
     const image = document.getElementById('myImage');
-    image.style.width = (image.style.width === '200px') ? '400px' : '200px';
+    if (image.style.width === '200px') {
+        image.style.width = '400px';
+    } else {
+        image.style.width = '200px';
+    }
 }
 
 function toggleMenu() {
