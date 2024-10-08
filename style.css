@@ -88,3 +88,12 @@ body {
 .show {
     display: block;
 }
+
+/* Make sure the show class overrides the hover rule */
+.dropdown .show {
+    display: block !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
