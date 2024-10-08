@@ -13,7 +13,7 @@ function enlargeImage() {
 }
 
 function toggleMenu() {
-    document.getElementById("dropdownContent").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("show");
 }
 
 window.onclick = function(event) {
@@ -27,7 +27,6 @@ window.onclick = function(event) {
         }
     }
 }
-
 
 function navHover(element) {
     element.style.color = "blue";

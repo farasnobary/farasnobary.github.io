@@ -80,8 +80,7 @@ body {
     display: block;
 }
 
-/* .show class added to display dropdown on click */
-.show {
+/* Show dropdown on click for mobile devices */
+.dropdown-content a:hover {
     display: block;
 }
-
