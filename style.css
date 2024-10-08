@@ -1,6 +1,14 @@
+/* General styles for the body */
+body {
+    font-family: Arial, monospace, serif;
+    background-color: #cee8f6;
+    color: #686767; 
+    margin: 12pt;
+}
+
 /* Style for the navigation bar */
 .navbar {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     background-color: #333;
@@ -8,26 +16,42 @@
     text-align: center; /* Center-aligns the items */
 }
 
-/* Style for each navigation link */
+/* Style for each navigation item */
 .navbar li {
     display: inline-block; /* Display items inline */
 }
 
 /* Style for the anchor links */
-.navbar li a, .dropbtn {
-    display: inline-block;
+.navbar li a {
     color: white;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    display: inline-block;
 }
 
 /* Hover effect for the links */
-.navbar li a:hover, .dropdown:hover .dropbtn {
+.navbar li a:hover {
     background-color: #575757;
+    transition: background-color 0.3s;
 }
 
-/* Dropdown container */
+/* Dropdown container (holds the dropdown content) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button styles */
+.dropdown .dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -43,6 +67,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
 
 /* Hover effect for dropdown links */
@@ -50,7 +75,12 @@
     background-color: #f1f1f1;
 }
 
-/* Show the dropdown menu on hover */
+/* Show the dropdown menu when the user hovers over the dropdown button */
 .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Show dropdown on click for mobile devices */
+.dropdown-content a:hover {
     display: block;
 }
