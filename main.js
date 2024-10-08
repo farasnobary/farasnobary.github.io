@@ -13,7 +13,7 @@ function enlargeImage() {
 }
 
 function toggleMenu() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("dropdownContent").classList.toggle("show");
 }
 
 window.onclick = function(event) {

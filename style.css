@@ -84,3 +84,7 @@ body {
 .dropdown-content a:hover {
     display: block;
 }
+
+.show {
+    display: block;
+}
