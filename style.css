@@ -1,68 +1,32 @@
-body {font-family: Arial, monospace, serif;
-    font-size: 12pt;
-    background-color: #cee8f6;
-    color: #686767; 
-    margin: 12pt;
+/* Style for the navigation bar */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
 }
 
-h1 {font-family: 'Microsoft Tai Le';
-    font-size: 35pt;
-    color: #535659;
+/* Style for each navigation link */
+.navbar li {
+    float: left;
 }
 
-h2 {font-family: 'Lucida Sans', monospace;
-    font-size: 24pt;
-    color: #427454;
-}
-
-h3 {font-family: 'Verdana', sans-serif;
-    font-size: 16pt;
-    color: #ee15d8;
-}
-
-p {
-    font-family: 'Times New Roman', serif;
-    font-size: 14pt;
-    color: #686767; 
-    line-height: 1.6; 
-}
-
-a:link, a:visited {
+/* Style for the anchor links */
+.navbar li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
-    color: #0279f7;
 }
 
-a:hover, a:active {
-    color: #4a4949;
+/* Hover effect for the links */
+.navbar li a:hover, .dropdown:hover .dropbtn {
+    background-color: #575757;
 }
 
-.link-section {margin-top: 20px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-}
-
-table {
-    width: 80%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    vertical-align: top;
-}
-
-table a {
-    font-weight: bold;
-    color: #0279f7;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+/* Dropdown container (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -71,11 +35,29 @@ table a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
+/* Dropdown links */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
-.dropdown-content a:hover {background-color: #f1f1f1;}
-.show {display: block;}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Clear floats */
+.navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
