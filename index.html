@@ -8,20 +8,20 @@
 </head>
 <body>
 
- <!-- Add the button and name display within the body -->
+ <!-- button and name -->
     <button onclick="promptName()">Please enter your name!</button>
     <p id="nameDisplay"></p>
 
-<!-- Navigation Menu -->
+<!-- nav Menu -->
 <nav>
     <ul class="navbar">
-        <li><a href="about.html" onmouseover="navHover(this)" onmouseout="navOut(this)">About Me</a></li>  <!-- Link to about.html -->
-        <li><a href="education.html" onmouseover="navHover(this)" onmouseout="navOut(this)">Education</a></li>  <!-- Link to education.html -->
+        <li><a href="about.html" onmouseover="navHover(this)" onmouseout="navOut(this)">About Me</a></li>  <!-- Link to website -->
+        <li><a href="education.html" onmouseover="navHover(this)" onmouseout="navOut(this)">Education</a></li>  <!-- Link to website -->
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn" onclick="toggleMenu()" onmouseover="navHover(this)" onmouseout="navOut(this)">More</a>
             <div id="dropdownContent" class="dropdown-content">
-                <a href="experience.html">Experience</a>  <!-- Link to experience.html -->
-                <a href="skills.html">Skills</a>  <!-- Link to skills.html -->
+                <a href="experience.html">Experience</a>  <!-- Link to website -->
+                <a href="skills.html">Skills</a>  <!-- Link to website -->
             </div>
         </li>
     </ul>
@@ -32,7 +32,7 @@
         <section id="about">
             <h1>Faras Nobary's Personal Profile</h1>
             <h2>About Me</h2>
-            <!-- Corrected image path -->
+            <!-- image in subsidiary folder as instructed -->
             <img id="myImage" src="images/IMG_1459 2.JPG" alt="Your Image" onclick="enlargeImage()" style="width: 200px; cursor: pointer;">
             <p>Greetings! My name is Faras Nobary, I am currently pursuing a Bachelor of Commerce in Business Technology Management at Toronto Metropolitan University. With my expected graduation in Spring 2025, I'm eager to explore the intersection of business and technology to drive innovation and create value in various industries. Please indulge yourself in my personal profile page.</p>
         </section>
@@ -89,7 +89,7 @@
         <p>&copy; 2024 Faras Nobary. All Rights Reserved.</p>
     </footer>
 
-    <!-- Include the JavaScript file at the end of the body to ensure the DOM is loaded -->
+    <!-- javascript file linked -->
     <script src="main.js"></script>
 </body>
 </html>
