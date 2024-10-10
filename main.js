@@ -25,7 +25,7 @@ window.onclick = function(event) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
+            if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
                 openDropdown.classList.remove('show');
             }
         }
