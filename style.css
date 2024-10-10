@@ -42,18 +42,22 @@ body {
     display: inline-block;
 }
 
-/* Dropdown button styles */
+/* Contact dropdown button styles */
 .dropdown .dropbtn {
     background-color: #333;
     color: white;
     padding: 14px 20px;
     border: none;
     cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
 }
 
-/* Hover effect for dropdown buttons ("More" and "Contact") */
-.dropbtn:hover {
+/* Hover effect only for the Contact dropdown button */
+.navbar .dropdown a.dropbtn:hover {
     background-color: #575757;
+    transition: background-color 0.3s;
 }
 
 /* Dropdown content (hidden by default) */
@@ -85,7 +89,7 @@ body {
     background-color: #f1f1f1;
 }
 
-/* Disable dropdown hover to prevent conflict with click functionality */
+/* Remove hover functionality for the 'More' button dropdown */
 .dropdown:hover .dropdown-content {
     display: none;
 }
