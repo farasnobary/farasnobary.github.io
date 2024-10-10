@@ -16,6 +16,9 @@ function toggleMenu() {
     document.getElementById("dropdownContent").classList.toggle("show");
 }
 
+function toggleContactMenu() {
+    document.getElementById("dropdownContact").classList.toggle("show");
+}
 
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
