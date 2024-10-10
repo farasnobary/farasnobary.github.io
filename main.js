@@ -16,6 +16,7 @@ function toggleMenu() {
     document.getElementById("dropdownContent").classList.toggle("show");
 }
 
+
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
