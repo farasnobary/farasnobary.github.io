@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Faras Nobary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="contact">
+        <h1>Contact Me</h1>
+
+        <!-- contact details -->
+        <div id="contact-info">
+            <p><strong>Faras Nobary</strong></p>
+            <p>28 Charles Street, King City, ON, L7B1J7</p>
+            <p>Email: <a href="mailto:farasnobary@gmail.com">farasnobary@gmail.com</a></p>
+            <p>Phone: (647) 993-8010</p>
+        </div>
+
+        <!-- contact form -->
+        <h2>Get in Touch</h2>
+        <form action="mailto:farasnobary@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <!-- link back home -->
+        <a href="index.html">Back to Home</a>
+    </section>
+</body>
+</html>
