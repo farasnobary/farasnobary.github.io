@@ -57,7 +57,7 @@ body {
 /* Dropdown button hover effect (Contact button) */
 .navbar .dropdown .dropbtn:hover {
     background-color: #575757;
-    color: blue; /* This adds the blue color to match other nav items */
+    color: blue !important; /* Force the color change */
     transition: background-color 0.3s;
 }
 
