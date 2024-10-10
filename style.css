@@ -1,4 +1,4 @@
-/* style for body */
+/* General styles for body */
 body {
     font-family: Arial, monospace, serif;
     background-color: #cee8f6;
@@ -6,7 +6,7 @@ body {
     margin: 12pt;
 }
 
-/* style navigation bar */
+/* Style for navigation bar */
 .navbar {
     list-style: none;
     margin: 0;
@@ -16,12 +16,12 @@ body {
     text-align: center; /* Center-aligns the items */
 }
 
-/* style navigation item each one*/
+/* Style for each navigation item */
 .navbar li {
     display: inline-block; /* Display items inline */
 }
 
-/* style anchor links each one*/
+/* Style for regular anchor links */
 .navbar li a {
     color: white;
     text-align: center;
@@ -30,25 +30,30 @@ body {
     display: inline-block;
 }
 
-/* hover effect for the links in navbar */
+/* Hover effect for regular navbar links */
 .navbar li a:hover {
     background-color: #575757;
     transition: background-color 0.3s;
 }
 
-/* dropdown box (holds the dropdown content) */
+/* Dropdown container (holds the dropdown content) */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* dropdown button styles */
+/* Dropdown button styles */
 .dropdown .dropbtn {
     background-color: #333;
     color: white;
     padding: 14px 20px;
     border: none;
     cursor: pointer;
+}
+
+/* Hover effect for dropdown buttons ("More" and "Contact") */
+.dropbtn:hover {
+    background-color: #575757;
 }
 
 /* Dropdown content (hidden by default) */
@@ -70,36 +75,17 @@ body {
     text-align: left;
 }
 
-/* Show dropdown content on click */
+/* Show dropdown content when .show class is applied */
 .show {
     display: block !important;
 }
-}
 
-/* hover effect for dropdown links */
+/* Hover effect for dropdown links */
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
-/* dropdown menu when the mouse hovers over the dropdown button */
+/* Disable dropdown hover to prevent conflict with click functionality */
 .dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* dropdown on click for mobile devices */
-.dropdown-content a:hover {
-    display: block;
-}
-
-.show {
-    display: block;
-}
-
-/* make sure the show class overrides the hover rule */
-.dropdown .show {
-    display: block !important;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+    display: none;
 }
