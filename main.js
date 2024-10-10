@@ -20,17 +20,18 @@ function toggleContactMenu() {
     document.getElementById("dropdownContact").classList.toggle("show");
 }
 
+// Close dropdown menu when clicking outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
+            if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
             }
         }
     }
-}
+};
 
 function navHover(element) {
     element.style.color = "blue";
