@@ -31,7 +31,26 @@
             <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
             <input type="submit" value="Send Message">
-        </form>
+        
+    <!-- New elements as per L6 requirements -->
+    <p><input type="text" id="username" name="username" placeholder="Enter your name"></p>
+    <p><input type="email" id="useremail" name="useremail" placeholder="Enter your email"></p>
+    <p><textarea id="message" name="message" rows="4" placeholder="Your message"></textarea></p>
+    <p>
+        Gender:
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        <input type="radio" id="other" name="gender" value="other"> Other
+    </p>
+    <p>
+        Interested in:
+        <input type="checkbox" id="updates" name="interest" value="updates"> Updates
+        <input type="checkbox" id="news" name="interest" value="news"> News
+        <input type="checkbox" id="offers" name="interest" value="offers"> Special Offers
+    </p>
+    <p><input type="submit" id="submitButton" value="Submit"><input type="reset" id="clearButton" value="Clear"></p>
+    </form>
+    
 
         <!-- link back home -->
         <a href="index.html">Back to Home</a>
