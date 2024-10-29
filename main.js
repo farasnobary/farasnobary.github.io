@@ -40,3 +40,24 @@ function navHover(element) {
 function navOut(element) {
     element.style.color = "";
 }
+
+// Function to handle form submission
+document.getElementById("submitButton").onclick = function(e) {
+    e.preventDefault(); // Prevent form from submitting to server
+    localStorage.setItem("username", document.getElementById("username").value);
+    localStorage.setItem("useremail", document.getElementById("useremail").value);
+    localStorage.setItem("message", document.getElementById("message").value);
+    localStorage.setItem("gender", document.querySelector('input[name="gender"]:checked').value);
+    localStorage.setItem("interest", Array.from(document.querySelectorAll('input[name="interest"]:checked')).map(checkbox => checkbox.value).join(", "));
+    alert("Your information has been saved!");
+};
+
+// Function to handle clearing form inputs
+document.getElementById("clearButton").onclick = function() {
+    document.getElementById("username").value = "";
+    document.getElementById("useremail").value = "";
+    document.getElementById("message").value = "";
+    document.querySelectorAll('input[name="gender"]').forEach(input => input.checked = false);
+    document.querySelectorAll('input[name="interest"]').forEach(input => input.checked = false);
+    alert("Form has been cleared!");
+};
