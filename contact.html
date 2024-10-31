@@ -7,53 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
     <section id="contact">
         <h1>Contact Me</h1>
+        <p>Feel free to reach out through this form for any inquiries or collaboration opportunities!</p>
 
-        <!-- contact details -->
-        <div id="contact-info">
-            <p><strong>Faras Nobary</strong></p>
-            <p>Toronto, ON, Canada</p>
-            <p>Email: <a href="mailto:farasnobary@gmail.com">farasnobary@gmail.com</a></p>
-            <p>Phone: (647) 993-8010</p>
-        </div>
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" required>
 
-        <!-- contact form -->
-        <h2>Get in Touch</h2>
-        <form action="mailto:farasnobary@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <label for="useremail">Your Email:</label>
+            <input type="email" id="useremail" name="useremail" required>
 
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Your Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female" required> Female
+            <input type="radio" id="other" name="gender" value="other" required> Other
 
-            <input type="submit" value="Send Message">
-        
-    <!-- New elements as per L6 requirements -->
-    <p><input type="text" id="username" name="username" placeholder="Enter your name"></p>
-    <p><input type="email" id="useremail" name="useremail" placeholder="Enter your email"></p>
-    <p><textarea id="message" name="message" rows="4" placeholder="Your message"></textarea></p>
-    <p>
-        Gender:
-        <input type="radio" id="male" name="gender" value="male"> Male
-        <input type="radio" id="female" name="gender" value="female"> Female
-        <input type="radio" id="other" name="gender" value="other"> Other
-    </p>
-    <p>
-        Interested in:
-        <input type="checkbox" id="updates" name="interest" value="updates"> Updates
-        <input type="checkbox" id="news" name="interest" value="news"> News
-        <input type="checkbox" id="offers" name="interest" value="offers"> Special Offers
-    </p>
-    <p><input type="submit" id="submitButton" value="Submit"><input type="reset" id="clearButton" value="Clear"></p>
-    </form>
-    
+            <label>Services Interested In:</label>
+            <input type="checkbox" id="consultation" name="interest" value="Consultation"> Consultation
+            <input type="checkbox" id="project" name="interest" value="Project"> Project
+            <input type="checkbox" id="feedback" name="interest" value="Feedback"> Feedback
 
-        <!-- link back home -->
-        <a href="index.html">Back to Home</a>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <!-- Submit and Clear buttons -->
+            <input type="submit" value="Submit" id="submitButton">
+            <input type="reset" value="Clear" id="clearButton">
+        </form>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Faras Nobary. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="main.js"></script>
 </body>
 </html>
