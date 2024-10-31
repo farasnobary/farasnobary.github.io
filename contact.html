@@ -1,29 +1,63 @@
-<!-- Gender Section -->
-<label>Gender:</label>
-<div class="form-group">
-    <input type="radio" id="male" name="gender" value="male" required>
-    <label for="male">Male</label>
-</div>
-<div class="form-group">
-    <input type="radio" id="female" name="gender" value="female" required>
-    <label for="female">Female</label>
-</div>
-<div class="form-group">
-    <input type="radio" id="other" name="gender" value="other" required>
-    <label for="other">Other</label>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Faras Nobary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Services Interested In Section -->
-<label>Services Interested In:</label>
-<div class="form-group">
-    <input type="checkbox" id="Consultation" name="interest" value="Consulting">
-    <label for="Consultation">Consultation</label>
-</div>
-<div class="form-group">
-    <input type="checkbox" id="ProjectManagement" name="interest" value="Project Management">
-    <label for="ProjectManagement">Project Management</label>
-</div>
-<div class="form-group">
-    <input type="checkbox" id="DataAnalyst" name="interest" value="Data Analyst">
-    <label for="DataAnalyst">Data Analyst</label>
-</div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out through this form for any inquiries or collaboration opportunities!</p>
+
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="useremail">Your Email:</label>
+            <input type="email" id="useremail" name="useremail" required>
+
+            <label for="phone">Company and Position:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female" required> Female
+            <input type="radio" id="other" name="gender" value="other" required> Other
+
+            <label>Services Interested In:</label>
+            <input type="checkbox" id="Consultation" name="interest" value="Consulting"> Consultation
+            <input type="checkbox" id="Project Management" name="interest" value="Project Management"> Project
+            <input type="checkbox" id="Data Analyst" name="interest" value="Data Analyst"> Feedback
+
+            <label for="message">Comment:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <!-- Submit and Clear buttons -->
+            <input type="submit" value="Submit" id="submitButton">
+            <input type="reset" value="Clear" id="clearButton">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Faras Nobary. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="main.js"></script>
+</body>
+</html>
