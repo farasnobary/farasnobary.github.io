@@ -94,7 +94,7 @@ body {
 
 #contactForm input[type="text"],
 #contactForm input[type="email"],
-#contactForm input[type="tel"],
+#contactForm input[type="text"],
 #contactForm textarea {
     padding: 0.7em;
     border: 1px solid #ddd;
@@ -125,9 +125,8 @@ body {
 }
 
 .form-group {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 8px; 
-    margin-top: 8px;
-    margin-bottom: -6px;
+    gap: 5px; /* Adjust as needed for spacing */
+    margin-bottom: 8px;
 }
