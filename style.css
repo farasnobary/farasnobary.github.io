@@ -117,3 +117,9 @@ body {
 #contactForm input[type="reset"]:hover {
     background-color: #575757;
 }
+
+/* Lower the radio buttons and checkboxes slightly */
+#contactForm input[type="radio"],
+#contactForm input[type="checkbox"] {
+    margin-top: 5px; /* Adjust value to control the distance */
+}
