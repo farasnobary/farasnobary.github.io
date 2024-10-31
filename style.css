@@ -124,10 +124,16 @@ body {
     margin-right: 8px; /* Adds space between the button and label */
 }
 
+/* Align radio buttons and checkboxes with labels on the same horizontal plane */
 .form-group {
     display: flex;
-    align-items: center;
-    gap: 8px; /* Space between the radio/checkbox and the label */
+    align-items: center; /* Aligns items on the same horizontal line */
+    gap: 8px; /* Space between the checkbox/radio and label */
     margin-bottom: 8px;
-    text-align: left;
+}
+
+#contactForm input[type="radio"],
+#contactForm input[type="checkbox"] {
+    margin: 0; /* Remove any top margin to align with label text */
+    vertical-align: middle; /* Aligns with text in most browsers */
 }
