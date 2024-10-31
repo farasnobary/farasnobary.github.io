@@ -127,6 +127,11 @@ body {
 .form-group {
     display: inline-flex;
     align-items: center;
-    gap: 5px; /* Adjust as needed for spacing */
+    gap: 8px; /* Space between button and label */
     margin-bottom: 8px;
+}
+
+.form-group label {
+    position: relative;
+    top: -1px; /* Adjust this to vertically align text with the button */
 }
