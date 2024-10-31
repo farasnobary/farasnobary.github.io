@@ -41,8 +41,7 @@ body {
     flex-direction: column;
     gap: 1em;
     max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
+    margin: auto;
     padding: 1em;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
@@ -67,8 +66,6 @@ body {
     color: white;
     background-color: #333;
     transition: background-color 0.3s ease;
-    display: block;
-    margin: 10px auto;
 }
 
 #contact form input[type="submit"]:hover,
@@ -81,9 +78,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 500px;
+    margin: auto;
     padding: 1.5em;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
@@ -92,4 +88,46 @@ body {
 }
 
 #contactForm label {
-   
+    font-weight: bold;
+    color: #333;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    padding: 0.7em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#contactForm input[type="submit"],
+#contactForm input[type="reset"] {
+    padding: 0.7em;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#contactForm input[type="submit"]:hover,
+#contactForm input[type="reset"]:hover {
+    background-color: #575757;
+}
+
+/* Align radio buttons and checkboxes horizontally with labels */
+#contactForm input[type="radio"],
+#contactForm input[type="checkbox"] {
+    margin-top: 0;
+    margin-right: 8px; /* Adds space between the button and label */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between the radio/checkbox and the label */
+    margin-bottom: 8px;
+    text-align: left;
+}
