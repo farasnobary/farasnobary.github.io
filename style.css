@@ -41,7 +41,8 @@ body {
     flex-direction: column;
     gap: 1em;
     max-width: 400px;
-    margin: auto;
+    margin: 0 auto;
+    text-align: center;
     padding: 1em;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
@@ -66,6 +67,8 @@ body {
     color: white;
     background-color: #333;
     transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto;
 }
 
 #contact form input[type="submit"]:hover,
@@ -78,8 +81,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    max-width: 500px;
-    margin: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
     padding: 1.5em;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
@@ -88,45 +92,4 @@ body {
 }
 
 #contactForm label {
-    font-weight: bold;
-    color: #333;
-}
-
-#contactForm input[type="text"],
-#contactForm input[type="email"],
-#contactForm input[type="text"],
-#contactForm textarea {
-    padding: 0.7em;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1em;
-}
-
-#contactForm input[type="submit"],
-#contactForm input[type="reset"] {
-    padding: 0.7em;
-    color: white;
-    background-color: #333;
-    border: none;
-    border-radius: 4px;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-#contactForm input[type="submit"]:hover,
-#contactForm input[type="reset"]:hover {
-    background-color: #575757;
-}
-
-/* Lower the radio buttons and checkboxes slightly */
-#contactForm input[type="radio"],
-#contactForm input[type="checkbox"] {
-    margin-top: 5px; /* Adjust value to control the distance */
-}
-
-.form-group {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px; /* Adjust as needed for spacing */
-    margin-bottom: 8px;
-}
+   
