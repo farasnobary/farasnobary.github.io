@@ -123,3 +123,11 @@ body {
 #contactForm input[type="checkbox"] {
     margin-top: 5px; /* Adjust value to control the distance */
 }
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
