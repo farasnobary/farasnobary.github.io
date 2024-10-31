@@ -20,7 +20,6 @@ function toggleContactMenu() {
     document.getElementById("dropdownContact").classList.toggle("show");
 }
 
-// Close dropdown menu when clicking outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -41,9 +40,9 @@ function navOut(element) {
     element.style.color = "";
 }
 
-// Function to handle form submission
+// Function form submission
 document.getElementById("submitButton").onclick = function(e) {
-    e.preventDefault(); // Prevent form from submitting to server
+    e.preventDefault(); 
     localStorage.setItem("username", document.getElementById("username").value);
     localStorage.setItem("useremail", document.getElementById("useremail").value);
     localStorage.setItem("message", document.getElementById("message").value);
@@ -52,7 +51,7 @@ document.getElementById("submitButton").onclick = function(e) {
     alert("Your information has been saved!");
 };
 
-// Function to handle clearing form inputs
+// Function for clearing form data
 document.getElementById("clearButton").onclick = function() {
     document.getElementById("username").value = "";
     document.getElementById("useremail").value = "";
@@ -62,9 +61,9 @@ document.getElementById("clearButton").onclick = function() {
     alert("Form has been cleared!");
 };
 
-// Submit button functionality: stores form data in local storage
+// Submit functionality stores in local storage
 document.getElementById("submitButton").onclick = function (e) {
-    e.preventDefault(); // Prevent form from submitting to server
+    e.preventDefault(); 
     localStorage.setItem("username", document.getElementById("username").value);
     localStorage.setItem("useremail", document.getElementById("useremail").value);
     localStorage.setItem("phone", document.getElementById("phone").value);
@@ -74,7 +73,7 @@ document.getElementById("submitButton").onclick = function (e) {
     alert("Your information has been saved!");
 };
 
-// Clear button functionality: resets form fields
+// Clear button functionality clears everything
 document.getElementById("clearButton").onclick = function () {
     document.getElementById("contactForm").reset();
     alert("Form has been cleared!");

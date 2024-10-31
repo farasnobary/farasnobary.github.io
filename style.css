@@ -1,4 +1,4 @@
-/* General styles for body */
+/* style body */
 body {
     font-family: Arial, monospace, serif;
     background-color: #cee8f6;
@@ -6,7 +6,7 @@ body {
     margin: 12pt;
 }
 
-/* Style for navigation bar */
+/* navigation bar */
 .navbar {
     list-style: none;
     margin: 0;
@@ -28,14 +28,14 @@ body {
     display: inline-block;
 }
 
-/* Hover effect for navigation links */
+/* Hover effect blue */
 .navbar li a:hover {
     background-color: #002366; /* Dark blue */
     color: white;
     transition: background-color 0.3s ease;
 }
 
-/* Additional styling for the form elements */
+/* form elements */
 #contact form {
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ body {
     background-color: #575757;
 }
 
-/* Enhanced styling for the contact form */
+/* contact form */
 #contactForm {
     display: flex;
     flex-direction: column;
@@ -117,23 +117,23 @@ body {
     background-color: #575757;
 }
 
-/* Align radio buttons and checkboxes horizontally with labels */
+/* Align with labels */
 #contactForm input[type="radio"],
 #contactForm input[type="checkbox"] {
     margin-top: 0;
-    margin-right: 8px; /* Adds space between the button and label */
+    margin-right: 8px; /* Adds space */
 }
 
-/* Align radio buttons and checkboxes with labels on the same horizontal plane */
+/* Align radio buttons and checkboxes */
 .form-group {
     display: flex;
-    align-items: center; /* Aligns items on the same horizontal line */
-    gap: 8px; /* Space between the checkbox/radio and label */
+    align-items: center; /* Align */
+    gap: 8px; /* Space for checkbox/radio */
     margin-bottom: 8px;
 }
 
 #contactForm input[type="radio"],
 #contactForm input[type="checkbox"] {
-    margin: 0; /* Remove any top margin to align with label text */
-    vertical-align: middle; /* Aligns with text in most browsers */
+    margin: 0; /* text */
+    vertical-align: middle;
 }
