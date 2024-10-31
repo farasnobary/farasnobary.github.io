@@ -72,6 +72,12 @@ body {
     background-color: #f1f1f1;
 }
 
+.navbar li a:hover {
+    background-color: #002366; /* Dark blue color */
+    color: white; /* Optional: change text color to ensure readability */
+    transition: background-color 0.3s ease;
+}
+
 /* Additional styling for the form elements */
 #contact form {
     display: flex;
