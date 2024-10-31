@@ -61,3 +61,21 @@ document.getElementById("clearButton").onclick = function() {
     document.querySelectorAll('input[name="interest"]').forEach(input => input.checked = false);
     alert("Form has been cleared!");
 };
+
+// Submit button functionality: stores form data in local storage
+document.getElementById("submitButton").onclick = function (e) {
+    e.preventDefault(); // Prevent form from submitting to server
+    localStorage.setItem("username", document.getElementById("username").value);
+    localStorage.setItem("useremail", document.getElementById("useremail").value);
+    localStorage.setItem("phone", document.getElementById("phone").value);
+    localStorage.setItem("gender", document.querySelector('input[name="gender"]:checked').value);
+    localStorage.setItem("interest", Array.from(document.querySelectorAll('input[name="interest"]:checked')).map(cb => cb.value).join(", "));
+    localStorage.setItem("message", document.getElementById("message").value);
+    alert("Your information has been saved!");
+};
+
+// Clear button functionality: resets form fields
+document.getElementById("clearButton").onclick = function () {
+    document.getElementById("contactForm").reset();
+    alert("Form has been cleared!");
+};
