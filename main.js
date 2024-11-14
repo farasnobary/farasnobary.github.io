@@ -84,14 +84,27 @@ function increaseTextSize() {
     document.body.style.fontSize = "1.9em";
 }
 
+let textIsEnlarged = false; // Track if text is currently enlarged
+
 function increaseTextSize() {
-    const elements = document.querySelectorAll("p, h1, h2, h3, li, td"); // Add any additional tags as needed
+    const elements = document.querySelectorAll("p, h1, h2, h3, li, td"); // Include any other tags as needed
+
     elements.forEach(element => {
-        const currentSize = window.getComputedStyle(element).fontSize;
-        const newSize = parseFloat(currentSize) * 1.2; // Increase size by 20%
-        element.style.fontSize = `${newSize}px`;
+        if (textIsEnlarged) {
+            // Reset to original size
+            element.style.fontSize = ""; // Removes the inline style, returning to CSS default
+        } else {
+            // Increase size by 20%
+            const currentSize = window.getComputedStyle(element).fontSize;
+            const newSize = parseFloat(currentSize) * 1.2;
+            element.style.fontSize = `${newSize}px`;
+        }
     });
+
+    // Toggle the flag
+    textIsEnlarged = !textIsEnlarged;
 }
+
 
 // Function for colorblind-friendly mode
 function toggleColorBlindMode() {
