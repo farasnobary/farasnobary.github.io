@@ -84,7 +84,14 @@ function increaseTextSize() {
     document.body.style.fontSize = "1.9em";
 }
 
-
+function increaseTextSize() {
+    const elements = document.querySelectorAll("p, h1, h2, h3, li, td"); // Add any additional tags as needed
+    elements.forEach(element => {
+        const currentSize = window.getComputedStyle(element).fontSize;
+        const newSize = parseFloat(currentSize) * 1.2; // Increase size by 20%
+        element.style.fontSize = `${newSize}px`;
+    });
+}
 
 // Function for colorblind-friendly mode
 function toggleColorBlindMode() {
