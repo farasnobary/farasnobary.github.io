@@ -115,3 +115,11 @@ function toggleColorBlindMode() {
         body.classList.add("colorblind");
     }
 }
+
+// 3 images
+function showAltText(imageId) {
+    const image = document.getElementById(imageId);
+    const altText = image.alt;
+    const altTextParagraph = document.getElementById(`altText${imageId.slice(-1)}`); // Selects the <p> tag for each image
+    altTextParagraph.innerText = altText;
+}
