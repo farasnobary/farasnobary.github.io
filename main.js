@@ -78,3 +78,19 @@ document.getElementById("clearButton").onclick = function () {
     document.getElementById("contactForm").reset();
     alert("Form has been cleared!");
 };
+
+// Function for enlarging text
+function increaseTextSize() {
+    document.body.style.fontSize = "1.2em";
+}
+
+
+// Function for colorblind-friendly mode
+function toggleColorBlindMode() {
+    const body = document.body;
+    if (body.classList.contains("colorblind")) {
+        body.classList.remove("colorblind");
+    } else {
+        body.classList.add("colorblind");
+    }
+}
