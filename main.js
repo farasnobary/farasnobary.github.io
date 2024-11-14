@@ -81,7 +81,7 @@ document.getElementById("clearButton").onclick = function () {
 
 // Function for enlarging text
 function increaseTextSize() {
-    document.body.style.fontSize = "1.2em";
+    document.body.style.fontSize = "1.9em";
 }
 
 
