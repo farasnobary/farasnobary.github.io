@@ -85,6 +85,7 @@ function increaseTextSize() {
 }
 
 
+
 // Function for colorblind-friendly mode
 function toggleColorBlindMode() {
     const body = document.body;
