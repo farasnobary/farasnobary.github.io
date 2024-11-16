@@ -79,17 +79,15 @@ document.getElementById("clearButton").onclick = function () {
     alert("Form has been cleared!");
 };
 
-}
-
-let textIsEnlarged = false; // text is enlarged
+let textIsEnlarged = false; // Track if text is enlarged
 
 function increaseTextSize() {
-    const elements = document.querySelectorAll("p, h1, h2, h3, li, td"); // Include other tags as needed
+    const elements = document.querySelectorAll("p, h1, h2, h3, li, td, span, div"); // Include all text elements
 
     elements.forEach(element => {
         if (textIsEnlarged) {
             // Reset to original size
-            element.style.fontSize = ""; // Removes the inline style, returning to CSS default
+            element.style.fontSize = ""; // Removes inline style
         } else {
             // Increase size by 20%
             const currentSize = window.getComputedStyle(element).fontSize;
@@ -98,9 +96,9 @@ function increaseTextSize() {
         }
     });
 
-    // Toggle the flag
-    textIsEnlarged = !textIsEnlarged;
+    textIsEnlarged = !textIsEnlarged; // Toggle flag
 }
+
 
 
 // Function for colorblind-friendly mode
