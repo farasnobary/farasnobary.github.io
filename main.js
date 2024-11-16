@@ -116,10 +116,9 @@ function toggleColorBlindMode() {
     }
 }
 
-// 3 images
+// photos
 function showAltText(imageId) {
-    const image = document.getElementById(imageId);
-    const altText = image.alt;
-    const altTextParagraph = document.getElementById(`altText${imageId.slice(-1)}`); // Selects the <p> tag for each image
-    altTextParagraph.innerText = altText;
+    const img = document.getElementById(imageId);
+    alert(img.alt);
 }
+
