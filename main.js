@@ -79,15 +79,12 @@ document.getElementById("clearButton").onclick = function () {
     alert("Form has been cleared!");
 };
 
-// Function for enlarging text
-function increaseTextSize() {
-    document.body.style.fontSize = "1.9em";
 }
 
-let textIsEnlarged = false; // Track if text is currently enlarged
+let textIsEnlarged = false; // text is enlarged
 
 function increaseTextSize() {
-    const elements = document.querySelectorAll("p, h1, h2, h3, li, td"); // Include any other tags as needed
+    const elements = document.querySelectorAll("p, h1, h2, h3, li, td"); // Include other tags as needed
 
     elements.forEach(element => {
         if (textIsEnlarged) {
